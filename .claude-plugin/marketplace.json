@@ -1,0 +1,12 @@
+{
+  "name": "deidentify-survey-data",
+  "owner": { "name": "Kalle Hirvonen" },
+  "description": "De-identify survey data for AI-assisted research without Claude seeing the identified data.",
+  "plugins": [
+    {
+      "name": "deidentify-survey-data",
+      "source": "./",
+      "description": "Skill that has Claude plan, script, test and verify the de-identification of survey data while the identified data stay in restricted storage."
+    }
+  ]
+}

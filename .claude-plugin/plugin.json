@@ -1,7 +1,7 @@
 {
   "name": "deidentify-survey-data",
   "displayName": "De-identify Survey Data",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "De-identify survey data for AI-assisted research without Claude ever seeing the identified data: Claude writes metadata-extraction and de-identification scripts (Stata, R, Python) that the researcher runs in restricted storage, then verifies the output.",
   "author": { "name": "Kalle Hirvonen" },
   "license": "MIT",

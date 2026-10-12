@@ -53,11 +53,13 @@ Fieldwork staff names (enumerators, supervisors, facilitators) sit at the bounda
 
 ## Step 0: Intake questionnaire
 
-The first response is the verbatim disclaimer from the Purpose section plus the first round of a short questionnaire, and nothing else. **Administer it with the `AskUserQuestion` tool**, not as prose. All questions in one call are shown together, so a question can only be skipped on the strength of an earlier round. The tool takes at most four questions per call. Give each item three or four concrete options plus a "Don't know" option that names the fallback from the table below; the tool adds "Other" for free text automatically. Mark the default with "(Recommended)" where the table gives one. Fall back to a numbered list in prose only if the tool is unavailable.
+The first response is the verbatim disclaimer from the Purpose section, the request for the two folders (below), and the first round of a short questionnaire, and nothing else. **Administer it with the `AskUserQuestion` tool**, not as prose. All questions in one call are shown together, so a question can only be skipped on the strength of an earlier round. The tool takes at most four questions per call. Give each item three or four concrete options plus a "Don't know" option that names the fallback from the table below; the tool adds "Other" for free text automatically. Mark the default with "(Recommended)" where the table gives one. Fall back to a numbered list in prose only if the tool is unavailable.
 
 Skip any item whose answer is already evident from the request or the project folder (a `.dta` mentioned, a country in the project name, a form file in the folder). Before the first round, look in the project folder for a `CLAUDE.md` or an existing `deidentify_intake.md`; if an intake note exists, confirm it instead of re-asking. Do not start writing scripts until the answers are in.
 
 Read the answers literally. Option text plus any note the researcher typed is the answer; a note may qualify an option, request a change, or ask you not to proceed.
+
+**The two folders.** In the text of the first response, after the disclaimer and before the round 1 questions, ask for the two paths every script needs, as free text: the **restricted folder** where the identified data are (the scripts read from here; Claude never opens it) and the **project folder** that receives the metadata log and the de-identified files (the scripts write here). They must be different folders, and the project folder should not be a temporary session folder. Folder paths are free text, so do not put them in the question tool. If the researcher does not give them, ask again before writing the extraction script.
 
 **Round 1** (none of these depends on the form):
 
@@ -105,7 +107,7 @@ Say up front, in the text preceding the first round, that "don't know" is an acc
 
 Write the answers, including any "don't know" and the fallback applied, to `<X>/deidentify_intake.md`. Like the flag list, this note is the durable record; the conversation will not be.
 
-If the researcher answers only round 1 and wants to move on, proceed with the extraction script and ask rounds 2 and 3 before Step 3.
+If the researcher answers only round 1 and the two folders and wants to move on, proceed with the extraction script and ask rounds 2 and 3 before Step 3.
 
 ### Reading the CAPI form
 

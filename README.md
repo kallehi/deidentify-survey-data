@@ -106,8 +106,8 @@ Claude never reads the identified data. It writes two scripts that you run
 where the data live, and it reads only what those scripts write to your
 project folder.
 
-1. **Intake.** Claude asks a short questionnaire in up to three rounds:
-   software, whether the CAPI form is available, country and output
+1. **Intake.** Claude asks for the two folders (restricted and project)
+   and a short questionnaire in up to three rounds: software, whether the CAPI form is available, country and output
    layout; then (skipping whatever the form already answers) platform,
    file structure, how far down place names may stay (codes are always
    kept), linked files and panel waves; then
